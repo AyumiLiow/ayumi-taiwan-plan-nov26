@@ -1,0 +1,390 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>I Don't Have: Taiwan Plan</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Figtree:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: one 920px reading column. Each section = bilingual header + one visual + a few short lines. Captions styled like Ayumi's lowercase reel overlays. */
+:root{
+  --bg:#f5f7f2; --surface:#ffffff; --ink:#1a231e; --muted:#5b6a62; --line:#dbe2da;
+  --grass:#2e6a44; --grass-soft:#e2ece3; --sun:#b87418; --sun-soft:#f7ead6; --sky:#3f76a0; --sky-soft:#e1ebf3;
+  --phone-a:#2d4a36; --phone-b:#6f8a55; --on-phone:#ffffff;
+  --f-display:"Instrument Serif", Georgia, "Times New Roman", serif;
+  --f-body:"Figtree", "Noto Sans TC", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --f-tc:"Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+  --f-mono:"IBM Plex Mono", ui-monospace, Menlo, monospace;
+}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
+  --bg:#111613; --surface:#18201b; --ink:#e7eee9; --muted:#9aa9a0; --line:#2a352e;
+  --grass:#7fc79a; --grass-soft:#1f2f26; --sun:#efb35c; --sun-soft:#33281a; --sky:#8dbbe0; --sky-soft:#1c2a36;
+  --phone-a:#1d3325; --phone-b:#45603a; --on-phone:#f4f7f4; color-scheme:dark }}
+:root[data-theme="dark"]{
+  --bg:#111613; --surface:#18201b; --ink:#e7eee9; --muted:#9aa9a0; --line:#2a352e;
+  --grass:#7fc79a; --grass-soft:#1f2f26; --sun:#efb35c; --sun-soft:#33281a; --sky:#8dbbe0; --sky-soft:#1c2a36;
+  --phone-a:#1d3325; --phone-b:#45603a; --on-phone:#f4f7f4; color-scheme:dark }
+
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.55;
+  padding-left:max(16px, env(safe-area-inset-left,0px));padding-right:max(16px, env(safe-area-inset-right,0px));padding-block:0 64px}
+.wrap{max-width:920px;margin:0 auto;display:flex;flex-direction:column;gap:64px}
+h1,h2,h3{text-wrap:balance;margin:0}
+p{margin:0}
+.tc{font-family:var(--f-tc)}
+.num{font-variant-numeric:tabular-nums}
+section{display:flex;flex-direction:column;gap:20px;scroll-margin-top:16px}
+.hd{display:flex;flex-direction:column;gap:4px}
+.hd h2{font-family:var(--f-display);font-weight:400;font-size:clamp(30px,5vw,40px);line-height:1.1}
+.hd .zh{font-family:var(--f-tc);font-size:16px;font-weight:500;color:var(--grass);letter-spacing:.04em}
+.lede{color:var(--muted);max-width:62ch}
+h3{font-size:16px;font-weight:700;line-height:1.35}
+h3 .zh{font-family:var(--f-tc);font-weight:500;color:var(--muted);font-size:13.5px;margin-left:6px}
+a{color:var(--grass)}
+a:focus-visible,button:focus-visible{outline:2px solid var(--grass);outline-offset:2px}
+
+/* hero */
+.hero{padding-top:44px;display:flex;flex-direction:column;gap:18px}
+.kicker{font-family:var(--f-mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.hero h1{font-family:var(--f-display);font-weight:400;font-size:clamp(44px,9vw,82px);line-height:.98;letter-spacing:-.01em}
+.hero h1 em{color:var(--grass)}
+.hero .zh-title{font-family:var(--f-tc);font-size:clamp(18px,3vw,22px);font-weight:500;color:var(--grass)}
+.direction{font-size:19px;max-width:58ch}
+.direction .tc{display:block;font-size:16px;color:var(--muted);margin-top:6px}
+.meta{display:flex;flex-wrap:wrap;gap:8px}
+.pill{font-family:var(--f-mono);font-size:12px;padding:4px 10px;border:1px solid var(--line);border-radius:999px;color:var(--muted);background:var(--surface)}
+nav.toc{display:flex;flex-wrap:wrap;gap:6px}
+nav.toc a{font-size:13.5px;text-decoration:none;padding:5px 11px;border-radius:999px;background:var(--grass-soft);color:var(--grass)}
+nav.toc a span{font-family:var(--f-tc);opacity:.8;margin-left:4px}
+
+/* strategy triad */
+.triad{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:var(--surface)}
+@media (max-width:680px){.triad{grid-template-columns:1fr}}
+.step{padding:18px;display:flex;flex-direction:column;gap:6px;min-width:0;position:relative}
+.step + .step{border-left:1px solid var(--line)}
+@media (max-width:680px){.step + .step{border-left:0;border-top:1px solid var(--line)}}
+.step .role{font-family:var(--f-mono);font-size:11.5px;letter-spacing:.08em;text-transform:uppercase}
+.step .role .tc{letter-spacing:.02em;margin-left:4px}
+.step b{font-size:18px}
+.step p{font-size:14.5px;color:var(--muted)}
+.step .proof{font-family:var(--f-mono);font-size:12.5px;color:var(--ink)}
+.s-disc .role{color:var(--sun)} .s-conv .role{color:var(--grass)} .s-conn .role{color:var(--sky)}
+.s-disc{box-shadow:inset 0 4px 0 var(--sun)} .s-conv{box-shadow:inset 0 4px 0 var(--grass)} .s-conn{box-shadow:inset 0 4px 0 var(--sky)}
+
+/* stats + funnel */
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+@media (max-width:720px){.stats{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.stat{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px;display:flex;flex-direction:column;gap:4px;min-width:0}
+.stat b{font-family:var(--f-display);font-weight:400;font-size:38px;line-height:1}
+.stat span{font-size:14px;color:var(--muted)}
+.stat.warn b{color:var(--sun)}
+.funnel{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:18px;display:flex;flex-direction:column;gap:10px}
+.frow{display:grid;grid-template-columns:minmax(0,12rem) minmax(0,1fr) 4.5rem;gap:12px;align-items:center;font-size:14px}
+.frow .bar{height:26px;border-radius:4px;background:var(--grass);min-width:4px}
+.frow .v{text-align:right;font-family:var(--f-mono);font-variant-numeric:tabular-nums}
+.frow .lbl .tc{display:block;color:var(--muted);font-size:12.5px}
+.funnel .note{font-size:14px;color:var(--muted)}
+.funnel .note b{color:var(--sun)}
+@media (max-width:560px){.frow{grid-template-columns:minmax(0,1fr) 4rem}.frow .track{grid-column:1 / -1;order:3}}
+.compare{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+@media (max-width:640px){.compare{grid-template-columns:1fr}}
+.plat-card{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px;display:flex;flex-direction:column;gap:8px;min-width:0}
+.plat-card ul{margin:0;padding-left:1.1em;font-size:14.5px;display:flex;flex-direction:column;gap:4px}
+.plat-card li::marker{color:var(--grass)}
+
+/* screenshots */
+.shots{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+@media (max-width:720px){.shots{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:440px){.shots{grid-template-columns:1fr}}
+.shot{margin:0;display:flex;flex-direction:column;gap:8px;min-width:0}
+.shot img{display:block;width:100%;max-width:100%;aspect-ratio:640/1391;object-fit:cover;object-position:top;border-radius:18px;border:1px solid var(--line);background:var(--surface)}
+.shot figcaption{font-size:14px;color:var(--muted)}
+.shot figcaption b{color:var(--ink);display:block}
+
+/* chart */
+.chart{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:18px;display:flex;flex-direction:column;gap:9px}
+.legend{display:flex;flex-wrap:wrap;gap:14px;font-size:13px;color:var(--muted)}
+.legend i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:6px;vertical-align:-1px}
+.row{display:grid;grid-template-columns:minmax(0,15rem) minmax(0,1fr) 3.5rem;gap:10px;align-items:center;font-size:14px}
+.row .lbl{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.track{height:14px;background:var(--bg);border-radius:3px;overflow:hidden}
+.row .bar{height:100%;border-radius:3px}
+.row .v{text-align:right;font-variant-numeric:tabular-nums;font-family:var(--f-mono);font-size:13px}
+.c-hook{background:var(--sun)} .c-bts{background:var(--sky)} .c-perf{background:var(--grass)} .c-lyric{background:var(--muted)}
+.chart .note{font-size:13px;color:var(--muted)}
+@media (max-width:560px){.row{grid-template-columns:minmax(0,1fr) 3.5rem}.row .track{grid-column:1 / -1;order:3}}
+
+/* fixes */
+.fixes{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+@media (max-width:820px){.fixes{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:440px){.fixes{grid-template-columns:1fr}}
+.fixc{background:var(--sun-soft);border-radius:12px;padding:14px;display:flex;flex-direction:column;gap:6px;min-width:0}
+.fixc .big{font-family:var(--f-display);font-size:30px;line-height:1;color:var(--sun)}
+.fixc p{font-size:14px}
+.fixc .do{color:var(--grass);font-weight:600}
+
+/* keep/evolve */
+.keep{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.chip{font-size:13.5px;padding:5px 11px;border-radius:999px;border:1px solid var(--line);background:var(--surface)}
+.arrow{font-family:var(--f-mono);color:var(--grass);font-size:14px}
+.chip.to{background:var(--grass);color:var(--surface);border-color:var(--grass);font-weight:600}
+
+/* board + plan */
+.board{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:20px;align-items:start}
+@media (max-width:760px){.board{grid-template-columns:1fr}}
+.board figure{margin:0;display:flex;flex-direction:column;gap:8px;min-width:0}
+.board img{display:block;width:100%;max-width:100%;border-radius:14px;border:1px solid var(--line)}
+.board figcaption{font-size:13.5px;color:var(--muted)}
+.plan{display:flex;flex-direction:column;border-top:1px solid var(--line);min-width:0}
+.pt{display:grid;grid-template-columns:2.2rem minmax(0,1fr) auto;gap:4px 12px;padding:11px 0;border-bottom:1px solid var(--line);align-items:start}
+.pt .n{font-family:var(--f-mono);font-size:13px;padding-top:2px}
+.pt .what{display:flex;flex-direction:column;gap:2px;min-width:0}
+.pt .what b{font-size:14.5px}
+.pt .badge{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;padding:2px 7px;border-radius:4px;margin-left:6px;vertical-align:1px;white-space:nowrap}
+.b-perf{background:var(--grass-soft);color:var(--grass)} .b-hook{background:var(--sun-soft);color:var(--sun)} .b-bts{background:var(--sky-soft);color:var(--sky)}
+.pt .cap{font-size:13.5px;color:var(--muted)}
+.pt .cap .tc{display:block}
+.copy{font-family:var(--f-mono);font-size:11.5px;padding:5px 10px;border-radius:6px;border:1px solid var(--grass);background:transparent;color:var(--grass);cursor:pointer;white-space:nowrap}
+.copy:hover{background:var(--grass-soft)}
+.order{font-size:14px;color:var(--muted)}
+
+/* collabs */
+.collabs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+@media (max-width:760px){.collabs{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:440px){.collabs{grid-template-columns:1fr}}
+.cb{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px 16px;display:flex;flex-direction:column;gap:6px;min-width:0}
+.cb .zh{font-family:var(--f-tc);color:var(--grass);font-size:13.5px;font-weight:500}
+.cb p{font-size:14px;color:var(--muted)}
+.platforms{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+@media (max-width:720px){.platforms{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.plat{background:var(--sky-soft);border-radius:12px;padding:14px;display:flex;flex-direction:column;gap:4px;min-width:0}
+.plat b{font-size:15px}
+.plat span{font-size:13.5px;color:var(--muted)}
+
+/* prompts */
+details.prompt{background:var(--surface);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+details.prompt summary{cursor:pointer;padding:13px 16px;display:flex;justify-content:space-between;align-items:center;gap:12px;font-weight:600;list-style:none}
+details.prompt summary::-webkit-details-marker{display:none}
+details.prompt summary .hint{font-family:var(--f-mono);font-size:12px;font-weight:400;color:var(--muted)}
+details.prompt[open] summary .hint::after{content:" ▲"} details.prompt:not([open]) summary .hint::after{content:" ▼"}
+.pbody{border-top:1px solid var(--line);display:flex;flex-direction:column}
+.pbody pre{margin:0;padding:16px;font-family:var(--f-mono);font-size:13px;line-height:1.6;white-space:pre-wrap;word-break:break-word;color:var(--ink);background:var(--grass-soft)}
+.pbody .bar{display:flex;justify-content:flex-end;padding:10px 16px}
+.slot{color:var(--sun);font-weight:500}
+.tips{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+@media (max-width:720px){.tips{grid-template-columns:1fr}}
+.tip{background:var(--sun-soft);border-radius:12px;padding:14px;font-size:14px;min-width:0}
+.tip b{display:block;margin-bottom:2px}
+
+/* questions */
+ol.qs{margin:0;padding-left:1.4em;display:flex;flex-direction:column;gap:10px;max-width:70ch}
+ol.qs li::marker{font-family:var(--f-mono);color:var(--grass)}
+ol.qs .tc{display:block;color:var(--muted);font-size:14px}
+.foot{font-size:13px;color:var(--muted);border-top:1px solid var(--line);padding-top:16px;display:flex;flex-direction:column;gap:6px}
+</style>
+
+<div class="wrap">
+
+<header class="hero">
+  <span class="kicker">Ayumi · Taiwan chapter · brief for 23 Oct 2026</span>
+  <h1>i don't have it <em>figured out</em></h1>
+  <span class="zh-title">台灣篇：我還沒搞清楚</span>
+  <p class="direction">A Singapore girl in Taipei, romanticising the little things while pretending she's completely fine.
+    <span class="tc">一個新加坡女生在台北，把生活小事過得很浪漫，同時假裝自己一切都很好。</span></p>
+  <div class="meta">
+    <span class="pill">Single: I Don't Have 〈我沒有〉 · out 9 Oct</span>
+    <span class="pill">Data: YouTube 25 Sep–22 Oct · Instagram 30 days</span>
+  </div>
+  <nav class="toc" aria-label="On this page">
+    <a href="#strategy">Strategy<span>策略</span></a>
+    <a href="#numbers">Numbers<span>數據</span></a>
+    <a href="#works">What works<span>有效內容</span></a>
+    <a href="#feed">Taiwan feed<span>台灣篇</span></a>
+    <a href="#collab">Collabs<span>雙語合作</span></a>
+    <a href="#prompts">Prompts<span>提示詞</span></a>
+  </nav>
+</header>
+
+<section id="strategy">
+  <div class="hd"><h2>Three post types, three jobs</h2><span class="zh">三種內容，三個任務</span></div>
+  <div class="triad">
+    <div class="step s-disc"><span class="role">Discovery<span class="tc">曝光</span></span><b>Caption-hook Reels</b><p>"i don't have ___ but ___" jokes reach strangers.</p><span class="proof">Best post: 2,706 views</span></div>
+    <div class="step s-conv"><span class="role">Conversion<span class="tc">轉粉</span></span><b>Live performances</b><p>Singing on the grass turns viewers into followers.</p><span class="proof">Top post for follows: +7</span></div>
+    <div class="step s-conn"><span class="role">Connection<span class="tc">連結</span></span><b>Behind the scenes</b><p>The crew, the gear and the process show your personality.</p><span class="proof">"how we shot it": 2.1K new viewers</span></div>
+  </div>
+</section>
+
+<section id="numbers">
+  <div class="hd"><h2>Where you stand</h2><span class="zh">目前現況</span></div>
+  <div class="stats">
+    <div class="stat"><b class="num">75K</b><span>views across both platforms</span></div>
+    <div class="stat warn"><b class="num">98.2%</b><span>of YouTube viewers are new</span></div>
+    <div class="stat warn"><b class="num">75%</b><span>of Shorts viewers swipe away</span></div>
+    <div class="stat"><b class="num">+51</b><span>new fans this month</span></div>
+  </div>
+  <div class="funnel" role="img" aria-label="Funnel: 75,088 views, about 15,400 people reached, 51 new fans">
+    <div class="frow"><span class="lbl">Views<span class="tc">觀看次數</span></span><div class="track"><div class="bar" style="width:100%"></div></div><span class="v">75.1K</span></div>
+    <div class="frow"><span class="lbl">People reached<span class="tc">觸及人數</span></span><div class="track"><div class="bar" style="width:20.5%"></div></div><span class="v">≈15.4K</span></div>
+    <div class="frow"><span class="lbl">New fans<span class="tc">新粉絲</span></span><div class="track"><div class="bar" style="width:.5%"></div></div><span class="v">51</span></div>
+    <p class="note">About <b>1 in 300</b> people you reach becomes a fan. Raising that number matters more than getting more views.</p>
+  </div>
+  <div class="compare">
+    <div class="plat-card"><h3>YouTube</h3><ul>
+      <li>17.5K views, 96% from Shorts</li>
+      <li>158 subscribers (+22)</li>
+      <li>Full song holds 75% of viewers at 0:30</li>
+      <li>Each spike fades within 1–2 days</li></ul></div>
+    <div class="plat-card"><h3>Instagram</h3><ul>
+      <li>57.6K views: Stories 34K, Reels 20K</li>
+      <li>269 followers (+29, +12.1%)</li>
+      <li>63% of views come from non-followers</li>
+      <li>Peaked around 11 Oct, quiet by 21 Oct</li></ul></div>
+  </div>
+  <div class="shots">
+    <figure class="shot"><img src="ig-grid.jpg" alt="Instagram grid for ayumiliow: pinned 'i don't have…' caption posts, lawn singing sessions, BTS with director and videographer" loading="lazy"><figcaption><b>Your grid today</b>Lowercase hooks, the lawn setup, Singapore streets.</figcaption></figure>
+    <figure class="shot"><img src="ig-top-reels.jpg" alt="Instagram Insights content list sorted by views: top reel 2.2K, then 2K, 1.8K, 1.5K" loading="lazy"><figcaption><b>Top posts, 30 days</b>Eight posts between 1.1K and 2.2K views.</figcaption></figure>
+    <figure class="shot"><img src="ig-overview.jpg" alt="Instagram Insights overview: 57,606 views, +29 net followers, 1,151 interactions" loading="lazy"><figcaption><b>Overview, 30 days</b>Stories outweigh Reels. Views fade after 18 Oct.</figcaption></figure>
+  </div>
+</section>
+
+<section id="works">
+  <div class="hd"><h2>What works, and what to fix</h2><span class="zh">有效的內容與待改善之處</span></div>
+  <div class="chart" role="img" aria-label="Instagram grid views by post, coloured by type">
+    <div class="legend"><span><i class="c-hook"></i>Caption hook</span><span><i class="c-bts"></i>BTS / humour</span><span><i class="c-perf"></i>Performance</span><span><i class="c-lyric"></i>Lyric close-up</span></div>
+    <div class="row"><span class="lbl">i don't have a good sense of direction…</span><div class="track"><div class="bar c-hook" style="width:100%"></div></div><span class="v">2,706</span></div>
+    <div class="row"><span class="lbl">casually side questing on my uni campus</span><div class="track"><div class="bar c-bts" style="width:81%"></div></div><span class="v">2,193</span></div>
+    <div class="row"><span class="lbl">i don't have work-life balance…</span><div class="track"><div class="bar c-hook" style="width:75.5%"></div></div><span class="v">2,042</span></div>
+    <div class="row"><span class="lbl">director: / videographer:</span><div class="track"><div class="bar c-bts" style="width:66.5%"></div></div><span class="v">1,800</span></div>
+    <div class="row"><span class="lbl">i don't have anything left to say (tree)</span><div class="track"><div class="bar c-perf" style="width:56.4%"></div></div><span class="v">1,525</span></div>
+    <div class="row"><span class="lbl">it's like a game</span><div class="track"><div class="bar c-bts" style="width:48.9%"></div></div><span class="v">1,323</span></div>
+    <div class="row"><span class="lbl">the set-up:</span><div class="track"><div class="bar c-perf" style="width:27.7%"></div></div><span class="v">749</span></div>
+    <div class="row"><span class="lbl">sorry i texted, sorry i called…</span><div class="track"><div class="bar c-lyric" style="width:22.6%"></div></div><span class="v">612</span></div>
+    <div class="row"><span class="lbl">white shirt performance</span><div class="track"><div class="bar c-perf" style="width:14.3%"></div></div><span class="v">388</span></div>
+    <p class="note">Instagram grid views as of 23 Oct. The tree performance brought the most follows (+7) despite fewer views.</p>
+  </div>
+  <div class="fixes">
+    <div class="fixc"><span class="big">75%</span><p>swipe away from Shorts.</p><p class="do">Open on the joke or the best vocal line.</p></div>
+    <div class="fixc"><span class="big">20×</span><p>more Shorts views than full-song views.</p><p class="do">Link every Short to the song.</p></div>
+    <div class="fixc"><span class="big">2 wks</span><p>until the release faded.</p><p class="do">Plan a second wave: Taiwan + a bilingual version.</p></div>
+    <div class="fixc"><span class="big">0.3%</span><p>of viewers are regulars.</p><p class="do">Run a series people can follow.</p></div>
+  </div>
+</section>
+
+<section id="feed">
+  <div class="hd"><h2>The Taiwan feed: a Taipei diary</h2><span class="zh">台灣篇：台北日記</span></div>
+  <p class="lede">Keep the look people already recognise and move it to Taipei.</p>
+  <div class="keep">
+    <span class="chip">black tank top</span><span class="chip">baggy jeans</span><span class="chip">green spaces</span><span class="chip">headphones</span><span class="chip">red audio interface</span><span class="chip">candid iPhone footage</span>
+    <span class="arrow">→</span><span class="chip to">Taipei diary · 台北日記</span>
+  </div>
+  <div class="board">
+    <figure><img src="ref-board.jpg" alt="Reference board of nine Taiwan locations: Tamsui sunset, night market bubble tea, lawn singing session, crew with reflector, Taipei MRT sign, audio gear desk, palm-lined campus avenue, convenience store at night, red-brick arcade with lanterns" loading="lazy"><figcaption>Reference board for locations and framing, in the order the posts appear on your profile. Reference photos only, not for posting.</figcaption></figure>
+    <div class="plan">
+      <div class="pt"><span class="n">01</span><div class="what"><b>Tamsui sunset<span class="badge b-perf">performance</span></b><span class="cap">i don't have closure but i have tamsui sunsets<span class="tc">我還沒放下，但我有淡水的夕陽</span></span></div><button class="copy" type="button" id="c1" data-scene="sitting on riverside steps in Tamsui at sunset, the wide river and a distant mountain silhouette behind her, orange sky, backlit hair">Prompt</button></div>
+      <div class="pt"><span class="n">02</span><div class="what"><b>Night market bubble tea<span class="badge b-hook">caption hook</span></b><span class="cap">i don't have self-control but i have 半糖少冰<span class="tc">我沒有自制力，但我有半糖少冰</span></span></div><button class="copy" type="button" id="c2" data-scene="in a busy Taipei night market street with glowing red lanterns, laughing and holding a clear cup of bubble milk tea, the mic in her other hand, no laptop (swap the daylight line for: evening, warm lantern light)">Prompt</button></div>
+      <div class="pt"><span class="n">03</span><div class="what"><b>Lawn session, Daan Forest Park<span class="badge b-perf">performance</span></b><span class="cap">i don't have anything left to say<span class="tc">我已經無話可說</span></span></div><button class="copy" type="button" id="c3" data-scene="cross-legged on a white sheet on the grass in a big Taipei city park, dappled light through trees, high-rise apartments faint in the distance">Prompt</button></div>
+      <div class="pt"><span class="n">04</span><div class="what"><b>Crew with reflector<span class="badge b-bts">BTS</span></b><span class="cap">director: · videographer: · taipei edition<span class="tc">導演：· 攝影：· 台北篇</span></span></div><button class="copy" type="button" id="c4" data-scene="wide behind-the-scenes shot in a leafy Taipei park: she lies on the grass singing while a young videographer films on a phone gimbal and another crew member holds a large white reflector">Prompt</button></div>
+      <div class="pt"><span class="n">05</span><div class="what"><b>MRT platform<span class="badge b-hook">caption hook</span></b><span class="cap">i don't have a sense of direction but i have the taipei mrt<span class="tc">我沒有方向感，但我有台北捷運</span></span></div><button class="copy" type="button" id="c5" data-scene="standing against a teal-tiled metro station wall under a glowing station sign, deadpan, phone map in one hand, headphones around her neck, no laptop (swap the daylight line for: cool fluorescent station light)">Prompt</button></div>
+      <div class="pt"><span class="n">06</span><div class="what"><b>The gear<span class="badge b-bts">BTS carousel</span></b><span class="cap">the set-up: (taipei edition)<span class="tc">器材：台北篇</span></span></div><button class="copy" type="button" id="c6" data-scene="no person: close-up of over-ear headphones, a black handheld mic, a small red audio interface and an open laptop on a small table in a warm Taipei rental apartment, a bubble tea cup and a transit card beside them">Prompt</button></div>
+      <div class="pt"><span class="n">07</span><div class="what"><b>Palm avenue campus<span class="badge b-hook">caption hook</span></b><span class="cap">me: casually side questing on someone else's uni campus (sorry prof, not my prof)<span class="tc">在別人的大學解支線任務（抱歉教授，你不是我的教授）</span></span></div><button class="copy" type="button" id="c7" data-scene="sitting on a lawn beside a wide university avenue lined with tall royal palm trees in Taipei, students cycling past in soft focus, blue sky">Prompt</button></div>
+      <div class="pt"><span class="n">08</span><div class="what"><b>Convenience store, 2am<span class="badge b-bts">BTS diary</span></b><span class="cap">i don't have it figured out but i have 小七 at 2am<span class="tc">我還沒搞清楚，但我有凌晨兩點的小七</span></span></div><button class="copy" type="button" id="c8" data-scene="sitting on the curb outside a brightly lit Taiwanese convenience store after rain, reflections on wet pavement, a scooter passing, snacks beside the laptop (swap the daylight line for: night, fluorescent and street light)">Prompt</button></div>
+      <div class="pt"><span class="n">09</span><div class="what"><b>Red-brick arcade, Dihua Street<span class="badge b-perf">performance</span></b><span class="cap">same song, new shophouse<span class="tc">一樣的歌，不一樣的騎樓</span></span></div><button class="copy" type="button" id="c9" data-scene="singing under the red-brick arched arcade of an old Dadaocheng shophouse street, red paper lanterns overhead, terracotta floor tiles, no laptop">Prompt</button></div>
+    </div>
+  </div>
+  <p class="order">Post in reverse order: 09 first, 01 last, so the grid lines up. Each row has one hook, one performance and one BTS post. Each <b>Prompt</b> button copies a full image prompt for that tile. Ask a native speaker to check the Chinese captions.</p>
+</section>
+
+<section id="collab">
+  <div class="hd"><h2>Bilingual collaborations</h2><span class="zh">雙語合作機會</span></div>
+  <div class="collabs">
+    <div class="cb"><h3>Bilingual version</h3><span class="zh">〈我沒有〉中英版</span><p>Add a Mandarin verse as a duet with a Taiwanese indie singer. That gives the single a second release moment.</p></div>
+    <div class="cb"><h3>Cover swap</h3><span class="zh">互相翻唱</span><p>You cover their song in English and they cover yours in Mandarin. Post on the same day.</p></div>
+    <div class="cb"><h3>Correct my Mandarin</h3><span class="zh">教我用中文唱</span><p>A language creator coaches your Mandarin chorus. The mistakes become the content.</p></div>
+    <div class="cb"><h3>Campus music club</h3><span class="zh">大學支線任務</span><p>Film tile 07 with a student music club and share the post with them.</p></div>
+    <div class="cb"><h3>Taipei crew</h3><span class="zh">台北拍攝團隊</span><p>A local videographer for tile 04, tagged so their audience finds you.</p></div>
+    <div class="cb"><h3>SG × TW series</h3><span class="zh">新加坡 vs 台灣</span><p>Shophouses, convenience stores, tea orders. Each one ends on a song line.</p></div>
+  </div>
+  <div class="platforms">
+    <div class="plat"><b>Threads</b><span>One of its most active markets. Post lyric lines as text.</span></div>
+    <div class="plat"><b>StreetVoice 街聲</b><span>Taiwan's main indie music platform. Upload both versions.</span></div>
+    <div class="plat"><b>KKBOX</b><span>Local streaming service and charts. Ask about playlist pitching.</span></div>
+    <div class="plat"><b>繁體中文</b><span>Use Traditional, not Simplified, Chinese for captions and subtitles.</span></div>
+  </div>
+</section>
+
+<section id="prompts">
+  <div class="hd"><h2>Prompt kit</h2><span class="zh">AI 情緒板提示詞</span></div>
+  <p class="lede">Use these in an AI image tool to preview the feed before you shoot. Open one, copy it, and add your own photos as a reference.</p>
+
+  <details class="prompt"><summary>1 · Moodboard collage<span class="hint">open</span></summary><div class="pbody">
+<pre id="p-mood">A creative moodboard collage for an indie pop singer's next Instagram chapter, titled "i don't have it figured out", set in Taipei, Taiwan. Creative direction: a Singapore girl in Taipei, romanticising the little things while pretending she's completely fine.
+
+Square canvas, a loose scrapbook layout of 12 to 15 overlapping photos and colour swatches on off-white linen, with strips of masking tape and small handwritten lowercase labels.
+
+Photos: a young East Asian woman with long brown wavy hair in a black tank top and baggy light-wash jeans, singing into a handheld mic with over-ear headphones on a white sheet on green grass; a laptop and a small red audio interface; a Tamsui river sunset; bubble tea in a lantern-lit night market; a teal-tiled metro station; a university avenue of royal palms; a convenience store glowing at night after rain; a red-brick shophouse arcade with red lanterns; a crew member holding a reflector.
+
+Palette swatches: grass green, golden-hour amber, off-white, matte black, a pop of red, and one cool teal for night shots.
+
+Feel: shot on iPhone, natural light, soft film grain, candid and unposed, lo-fi bedroom pop, a little funny, a little heartbroken. Use <span class="slot">{YOUR PHOTOS}</span> as character reference. No logos, no brand names, no watermark.</pre>
+  <div class="bar"><button class="copy" type="button" id="copy-mood" data-target="p-mood">Copy</button></div></div></details>
+
+  <details class="prompt"><summary>2 · Full 3×3 feed mock-up<span class="hint">open</span></summary><div class="pbody">
+<pre id="p-grid">A realistic mock-up of an Instagram profile grid on a phone screen: 3 columns by 3 rows of vertical 4:5 photos with thin white gutters, a cohesive "Taipei diary" feed for an indie pop singer. Every tile looks like a candid iPhone photo with soft film grain, warm golden and muted green tones, and teal at night. The same young East Asian woman appears in most tiles: long brown wavy hair, black tank top, baggy light-wash jeans, over-ear headphones, handheld black microphone.
+
+Row 1: from behind, at a riverside railing at sunset | laughing with bubble tea in a lantern-lit night market | singing cross-legged on a white sheet on grass, laptop and small red audio interface beside her.
+Row 2: behind the scenes, a videographer with a gimbal and a crew member with a white reflector in a leafy park | standing deadpan against a teal-tiled metro wall under a glowing station sign | the gear on a table: headphones, mic, red audio interface, laptop.
+Row 3: a university avenue lined with tall royal palms, students cycling | a convenience store glowing at night after rain, a scooter passing | a red-brick arched arcade with red lanterns.
+
+Leave a clear band at the top of each tile for a caption. No real text, no logos, no brand names. Use <span class="slot">{YOUR PHOTOS}</span> for face consistency.</pre>
+  <div class="bar"><button class="copy" type="button" id="copy-grid" data-target="p-grid">Copy</button></div></div></details>
+
+  <details class="prompt"><summary>3 · Single tile (base for the Prompt buttons)<span class="hint">open</span></summary><div class="pbody">
+<pre id="p-base">Vertical 4:5 photo for an Instagram feed post that looks like a candid iPhone shot. Natural late-afternoon daylight, soft warm golden tones, gentle film grain, slightly muted greens, no heavy filter.
+
+A young East Asian woman in her early 20s with long brown hair in loose waves, wearing a black tank top, light-wash baggy distressed jeans and chunky black boots. She wears over-ear studio headphones and sings into a handheld black dynamic microphone, relaxed and unposed. Beside her on a white sheet: an open laptop, a small red USB audio interface and loose cables.
+
+Setting: <span class="slot">{TILE}</span>
+
+It should sit naturally in a "Taipei diary" feed: same light, grain and palette as the other tiles. Leave the top fifth of the frame empty for a caption. No text, no logos, no brand names, no watermark.</pre>
+  <div class="bar"><button class="copy" type="button" id="copy-base" data-target="p-base">Copy</button></div></div></details>
+
+  <details class="prompt"><summary>Bonus · Plan nine more posts (ChatGPT, Claude, etc.)<span class="hint">open</span></summary><div class="pbody">
+<pre id="p-ideas">I'm Ayumi, a Singapore-based singer-songwriter and university student. My English pop single "I Don't Have" came out on 9 Oct 2026. My next Instagram chapter is "i don't have it figured out": a Singapore girl in Taipei, romanticising the little things while pretending she's completely fine.
+
+My feed today: lo-fi, shot on iPhone, outdoors in daylight. I sing on the grass with headphones, a handheld mic, a laptop and a small red audio interface on a white sheet. I wear a black tank top and baggy jeans. Captions are lowercase and self-deprecating, usually "i don't have ___ but ___". I also post BTS labelled "director:" / "videographer:". Caption hooks get the most views (up to 2.7K), live singing gets the most follows, and BTS builds connection.
+
+Plan my next 9 posts as a cohesive 3x3 grid. For each tile give: grid position, format (Reel, photo or carousel), job (discovery, conversion or connection), Taiwan location, what's in the shot, an English caption in my style, a natural Traditional Chinese (Taiwan Mandarin) version, and which part of the song to use. Mix the three jobs in every row, give the posting order, and keep production to one phone and one friend.</pre>
+  <div class="bar"><button class="copy" type="button" id="copy-ideas" data-target="p-ideas">Copy</button></div></div></details>
+
+  <div class="tips">
+    <div class="tip"><b>Keep it looking like you</b>Attach two or three of your own photos as a reference.</div>
+    <div class="tip"><b>Use it as a shot list</b>Post real photos and clips. The AI images are only a plan.</div>
+    <div class="tip"><b>Add captions later</b>AI tools often garble Chinese text. Add captions in Instagram or CapCut.</div>
+  </div>
+</section>
+
+<footer class="foot">
+  <span>Sources: Ayumi's YouTube Studio (25 Sep–22 Oct 2026) and Instagram Insights (30 days to 22 Oct) screenshots, plus the Instagram grid as of 23 Oct. "People reached" adds YouTube's monthly audience (4K) to Instagram viewers (11.4K), so it may count some people twice. Streaming numbers are not included.</span>
+  <span>Background: <a href="https://de.statista.com/statistik/daten/studie/1429505/umfrage/ranking-laender-meiste-active-users-threads" target="_blank" rel="noopener">Threads users by country (Statista)</a> · <a href="https://en.wikipedia.org/wiki/StreetVoice" target="_blank" rel="noopener">StreetVoice</a> · <a href="https://tpbusker.gov.taipei/upfiles/news20241025115610_f2.pdf" target="_blank" rel="noopener">Taipei street performer programme</a></span>
+</footer>
+
+</div>
+<script>
+(function(){
+  function textOf(id){var el=document.getElementById(id);return el?el.textContent.trim():''}
+  function copy(btn,text,label){
+    function done(){btn.textContent='Copied';setTimeout(function(){btn.textContent=label},1500)}
+    function fail(){btn.textContent='Copy failed';setTimeout(function(){btn.textContent=label},2000)}
+    try{navigator.clipboard.writeText(text).then(done,fail)}catch(e){fail()}
+  }
+  document.querySelectorAll('.copy').forEach(function(btn){
+    var label=btn.textContent;
+    btn.addEventListener('click',function(e){
+      e.preventDefault();
+      if(btn.dataset.scene){copy(btn,textOf('p-base').replace('{TILE}',btn.dataset.scene),label)}
+      else if(btn.dataset.target){copy(btn,textOf(btn.dataset.target),label)}
+    });
+  });
+})();
+</script>
+
+</body></html>
